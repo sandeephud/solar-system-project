@@ -33,10 +33,10 @@ jobs:
           name: Mocha-Test-Result
           path: test-results.xml
 
-code-coverage:
-   name: code coverage
-   runs-on: ubuntu-latest
-   steps:
+  code-coverage:
+    name: code coverage
+    runs-on: ubuntu-latest
+    steps:
       - name: checkout Repo
         uses: actions/checkout@v4
 
