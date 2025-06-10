@@ -1,4 +1,4 @@
-name: solar system unit test 2
+name: solar system unit test 3
 on:
   push: null
   workflow_dispatch:
