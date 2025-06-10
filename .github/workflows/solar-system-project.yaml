@@ -36,7 +36,7 @@ jobs:
 code-coverage:
    name: code coverage
    runs-on: ubuntu-latest
-    steps:
+   steps:
       - name: checkout Repo
         uses: actions/checkout@v4
 
