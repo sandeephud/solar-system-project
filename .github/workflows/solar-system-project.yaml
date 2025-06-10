@@ -36,7 +36,7 @@ jobs:
 
   code-coverage:
     name: code coverage
-    need: unit-testing
+    needs: unit-testing
     runs-on: ubuntu-latest
     steps:
       - name: checkout Repo
