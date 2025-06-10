@@ -14,7 +14,8 @@ jobs:
     name: unit testing
     runs-on: ubuntu-latest
     steps:
-      
+      - name: checkout Repository
+        uses: actions/checkout@v4
 
       - name: Setup Nodejs version - 18
         uses: actions/setup-node@v4
@@ -35,6 +36,7 @@ jobs:
 
   code-coverage:
     name: code coverage
+    need: unit-testing
     runs-on: ubuntu-latest
     steps:
       - name: checkout Repo
@@ -49,7 +51,6 @@ jobs:
         run: npm install
 
       - name: check code coverage
-        continue-on-error: true
         run: npm run coverage
 
       - name: Archieve test Result
